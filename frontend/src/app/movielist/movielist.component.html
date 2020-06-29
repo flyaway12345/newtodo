@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 >My Table</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Recommended</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr **ngFor="let movie of movies">
+                <td>{{movie.id}}</td>
+                <td>{{movie.title}}</td>
+                <td>{{movie.description}}</td>
+                <td>{{movie.recommended}}</td>
+                <td><button type="button" class="btn btn-primary">View</button></td>
+                <td><button type="button" class="btn btn-Waring">Edit</button></td>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" (click)="goToAddMovie()" class="btn btn-success">Add</button>
+
+</div>
